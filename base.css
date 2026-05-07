@@ -1,0 +1,66 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: #f5f0e6;
+  line-height: 1.7;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(58, 36, 29, 0.85);
+  padding: 15px 40px;
+  border-bottom: 4px solid #c19a6b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo-text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f5f0e6;
+  letter-spacing: 2px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #f5f0e6;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+nav a:hover,
+nav a.active {
+  background: #c19a6b;
+  color: #2a1d16;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #c19a6b;
+  color: #2a1d16;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s;
+}
+.btn:hover {
+  background: #a67c52;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
